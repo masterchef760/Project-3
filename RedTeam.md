@@ -11,9 +11,9 @@ After running `nmap -sS -sC -sV -Pn 192.168.1.0/24` we can identify all the IP's
 
 ![alt_text](pictures/nmapscan1.PNG)
 ![alt_text](pictures/nmapscan2.PNG)
-![alt_text](pictures/nmapscan3.png)
-[pictures/nmapscan4.png]
-[pictures/nmapscan5.png]
+![alt_text](pictures/nmapscan3.PNG)
+![alt_text](pictures/nmapscan4.PNG)
+![alt_text](pictures/nmapscan5.PNG)
 
 | HOSTNAME       |     IP        | OPEN PORTS |
 |----------------|---------------|------------|
@@ -25,7 +25,7 @@ After running `nmap -sS -sC -sV -Pn 192.168.1.0/24` we can identify all the IP's
 
 Now that we've identified `192.168.1.110` as the target WordPress server, and we can enumerate with a common wordlist provided by the WPSCAN command, using `wpscan -e --url http://192.168.1.110/wordpress`,
 
-![alt_text](https://github.com/masterchef760/Project-3/blob/efbd34557f3853f806b88f71b0e7c0cf8c41aaa6/pictures/wpscan.PNG)
+![alt_text](pictures/wpscan.PNG)
 
 we found the users `michael` and `steven`, and some associated directories
 
@@ -33,7 +33,7 @@ Port 22 is open, lets see if we can `ssh michael@192.168.1.110` and guess the pa
 
 We were able to ssh into the target machine using username: michael and password: michael
 
-[pictures/ssh.png]
+![alt_text](pictures/ssh.PNG)
 
 ## The exploitation phase
 Know that we can traverse the directories, we can go to common default directory names to look for *the sensitive information* that we are looking for.
@@ -41,28 +41,28 @@ Know that we can traverse the directories, we can go to common default directory
 *flag1*
 found in `/var/www/html/service.html`
 
-[pictures/flag1.png]
+![alt_text](pictures/flag1.PNG)
 
 *flag2*
 found in `/var/www/`
 
-[pictures/flag2.png]
+![alt_text](pictures/flag2.PNG)
 
 Someone left the credentials for the SQL database lying around at `/var/www/html/wordpress/wp-config.php`
 
-[pictures/sqldb.png]
+![alt_text](pictures/sqldb.PNG)
 
 Both of these flags just take a little bit of time to find and go through, they're located in similar directories that would normally be of interest, While looking also looking for the SQL database
 
 Going into the SQL database we can see that the credentials are `root:895819057t190-` taking a look with `sql root@192.168.1.110` we can see the following databases, the one of interest seems to be `wordpress`
 
-[pictures/sql_screenshot1.png]
+![alt_text](pictures/sql_screenshot1.PNG)
 
-[pictures/sql_screenshot2.png]
+![alt_text](pictures/sql_screenshot2.PNG)
 
 *flag3* found found `wordpress/wp_posts` in the SQL databasae
 
-[pictures/flag3.png]
+![alt_text](pictures/flag3.PNG)
 
 ### Privileged Escalation
 
@@ -71,6 +71,6 @@ So, there is an intended way to do a real exploit left for this lab to do Privil
 *flag4* 
 found in `/root`
 
-[pictures/flag4.png]
+![alt_text](pictures/flag4.PNG)
 
-And that's all for flags
+And that's all four flags
