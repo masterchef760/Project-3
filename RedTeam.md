@@ -25,7 +25,7 @@ After running `nmap -sS -sC -sV -Pn 192.168.1.0/24` we can identify all the IP's
 
 Now that we've identified `192.168.1.110` as the target WordPress server, and we can enumerate with a common wordlist provided by the WPSCAN command, using `wpscan -e --url http://192.168.1.110/wordpress`,
 
-[https://github.com/masterchef760/Project-3/blob/efbd34557f3853f806b88f71b0e7c0cf8c41aaa6/pictures/wpscan.PNG]
+![alt_text](https://github.com/masterchef760/Project-3/blob/efbd34557f3853f806b88f71b0e7c0cf8c41aaa6/pictures/wpscan.PNG)
 
 we found the users `michael` and `steven`, and some associated directories
 
