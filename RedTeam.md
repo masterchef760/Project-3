@@ -56,9 +56,9 @@ Both of these flags just take a little bit of time to find and go through, they'
 
 Going into the SQL database we can see that the credentials are `root:895819057t190-` taking a look with `sql root@192.168.1.110` we can see the following databases, the one of interest seems to be `wordpress`
 
-![alt_text](pictures/sql_screenshot1.PNG)
+![alt_text](pictures/sqldb1.PNG)
 
-![alt_text](pictures/sql_screenshot2.PNG)
+![alt_text](pictures/sqldb2.PNG)
 
 *flag3* found found `wordpress/wp_posts` in the SQL databasae
 
