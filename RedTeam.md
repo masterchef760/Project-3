@@ -9,7 +9,7 @@
 
 After running `nmap -sS -sC -sV -Pn 192.168.1.0/24` we can identify all the IP's, and what they're doing on the network.
 
-[pictures/nmapscan1.png]
+![alt_text](pictures/nmapscan1.PNG)
 [pictures/nmapscan2.png]
 [pictures/nmapscan3.png]
 [pictures/nmapscan4.png]
