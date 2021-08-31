@@ -18,6 +18,10 @@ You must inspect your traffic capture to answer the following questions in your 
 
   - Trojan inject
 
+![alt_text](network/Virust_total.PNG)
+
+![alt_text](network/Genetics.PNG)  
+
 #### Vulnerable Windows Machines
 
 The Security team received reports of an infected Windows host on the network. They know the following:
@@ -58,3 +62,5 @@ Your task is to isolate torrent traffic and answer the following questions in yo
     - OS version `Windows NT 10.0`
 
 2. Which torrent file did the user download? `Betty_Boop_Rhythm_on_the_Reservation.avi.torrent`
+
+![alt_text](network/BitTorrent.PNG)

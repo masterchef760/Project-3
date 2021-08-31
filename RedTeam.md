@@ -7,7 +7,7 @@
 
 ## Planning and Reconnaissance and Vulnerability Identification Phase
 
-After running `nmap -sS -sC -sV -Pn 192.168.1.0/24` we can identify all the IP's, and what they're doing on the network.
+After running `nmap -sS -sC -sV -Pn -O 192.168.1.0/24` we can identify all the IP's, and what they're doing on the network.
 
 ![alt_text](pictures/nmapscan1.PNG)
 ![alt_text](pictures/nmapscan2.PNG)
@@ -68,7 +68,7 @@ Going into the SQL database we can see that the credentials are `root:895819057t
 
 So, there is an intended way to do a real exploit left for this lab to do Privileged escalation, and it will be demonstrated, but it is important to note that the root password was any first root password guess you can do, `toor`, which saved any real attempt for actual thinking.
 
-*flag4* 
+*flag4*
 found in `/root`
 
 ![alt_text](pictures/flag4.PNG)
