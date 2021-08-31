@@ -63,4 +63,4 @@ Your task is to isolate torrent traffic and answer the following questions in yo
 
 2. Which torrent file did the user download? `Betty_Boop_Rhythm_on_the_Reservation.avi.torrent`
 
-![alt_text](network/BitTorrent.png)
+![alt_text](network/BitTorrent_grab.png)
