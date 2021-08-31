@@ -18,7 +18,7 @@ You must inspect your traffic capture to answer the following questions in your 
 
   - Trojan inject
 
-![alt_text](network/Virust_total.png)
+![alt_text](network/Virus_total.png)
 
 ![alt_text](network/Genetics.png)  
 
